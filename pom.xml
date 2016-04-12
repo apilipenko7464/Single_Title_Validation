@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>core</groupId>
-  <artifactId>Single_Title_Validation</artifactId>
- <!-- <version>1.1</version> -->
-    <version>${build.version}</version>
+  <artifactId>TitleValidation_CLO_JCommander</artifactId>
+ <version>1.1</version> 
+    <!-- <version>${build.version}</version>-->
   <packaging>jar</packaging>
 
-  <name>Single_Title_Validation</name>
+  <name>TitleValidation_CLO_JCommander</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -27,17 +27,22 @@
 			<artifactId>selenium-java</artifactId>
 			<version>2.46.0</version>
 		</dependency>
+		 <dependency>
+                     <groupId>com.beust</groupId>
+                     <artifactId>jcommander</artifactId>
+                     <version>1.48</version>
+              </dependency>
 	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4</version>
+				<version>2.6</version>
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>core.Selenium</mainClass>
+							<mainClass>core.JavaSingleArgument_CLO</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
